@@ -1,0 +1,35 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.unluck_curse",
+		"fallback": "Curse of Unluck"
+	},
+	"effects": {
+		"minecraft:fishing_luck_bonus": [
+			{
+				"effect": {
+					"type": "minecraft:add",
+					"value": {
+						"type": "minecraft:linear",
+						"base": -2,
+						"per_level_above_first": -1
+					}
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#enchantable/fishing",
+	"weight": 1
+}

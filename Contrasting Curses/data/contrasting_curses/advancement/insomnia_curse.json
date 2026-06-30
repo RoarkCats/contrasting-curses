@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "sleep_in_bed": {
+            "trigger": "minecraft:slept_in_bed",
+            "conditions": {
+                "player": {
+                    "slots": {
+                        "armor.*": {
+                            "predicates": {
+                                "enchantments": [
+                                    {
+                                        "enchantments": "contrasting_curses:insomnia_curse"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "contrasting_curses:enchant/insomnia"
+    }
+}

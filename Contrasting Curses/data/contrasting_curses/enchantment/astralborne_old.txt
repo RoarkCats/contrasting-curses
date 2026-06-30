@@ -1,0 +1,87 @@
+I wish this would work, doesn't stack properly tho and can get stuck on :/
+anyhow this is what I originally went for the enchant file
+
+
+		"minecraft:location_changed": [
+			{
+				"requirements": {
+					"condition": "location_check",
+					"predicate": {"position": {"y": {"min": 160}}}
+				},
+				"effect": {
+					"type": "all_of",
+					"effects": [
+						{
+							"type": "attribute", "attribute": "minecraft:generic.attack_damage", "id": "contrasting_curses:astralborne_attack_damage",
+							"operation": "add_value", "amount": {"type": "linear","base": 0.5,"per_level_above_first": 0.25}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.armor", "id": "contrasting_curses:astralborne_armor",
+							"operation": "add_value", "amount": {"type": "linear","base": 1,"per_level_above_first": 0.5}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.movement_speed", "id": "contrasting_curses:astralborne_movement_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": 0.05,"per_level_above_first": 0.025}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:player.block_break_speed", "id": "contrasting_curses:astralborne_block_break_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": 0.1,"per_level_above_first": 0.05}
+						}
+					]
+				}
+			},
+			{
+				"requirements": {
+					"condition": "location_check",
+					"predicate": {"position": {"y": {"min": 46, "max": 159}}}
+				},
+				"effect": {
+					"type": "all_of",
+					"effects": [
+						{
+							"type": "attribute", "attribute": "minecraft:generic.attack_damage", "id": "contrasting_curses:astralborne_attack_damage",
+							"operation": "add_value", "amount": {"type": "linear","base": -0.5,"per_level_above_first": -0.25}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.armor", "id": "contrasting_curses:astralborne_armor",
+							"operation": "add_value", "amount": {"type": "linear","base": -1,"per_level_above_first": -0.5}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.movement_speed", "id": "contrasting_curses:astralborne_movement_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": -0.05,"per_level_above_first": -0.025}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:player.block_break_speed", "id": "contrasting_curses:astralborne_block_break_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": -0.1,"per_level_above_first": -0.05}
+						}
+					]
+				}
+			},
+			{
+				"requirements": {
+					"condition": "location_check",
+					"predicate": {"position": {"y": {"max": 45}}}
+				},
+				"effect": {
+					"type": "all_of",
+					"effects": [
+						{
+							"type": "attribute", "attribute": "minecraft:generic.attack_damage", "id": "contrasting_curses:astralborne_attack_damage",
+							"operation": "add_value", "amount": {"type": "linear","base": -1,"per_level_above_first": -0.5}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.armor", "id": "contrasting_curses:astralborne_armor",
+							"operation": "add_value", "amount": {"type": "linear","base": -2,"per_level_above_first": -1}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:generic.movement_speed", "id": "contrasting_curses:astralborne_movement_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": -0.1,"per_level_above_first": -0.05}
+						},
+						{
+							"type": "attribute", "attribute": "minecraft:player.block_break_speed", "id": "contrasting_curses:astralborne_block_break_speed",
+							"operation": "add_multiplied_base", "amount": {"type": "linear","base": -0.2,"per_level_above_first": -0.1}
+						}
+					]
+				}
+			}
+		],

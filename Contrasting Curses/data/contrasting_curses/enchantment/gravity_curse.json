@@ -1,0 +1,45 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.gravity_curse",
+		"fallback": "Curse of Gravity"
+	},
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.gravity",
+				"id": "contrasting_curses:gravity_gravity",
+				"operation": "add_multiplied_base",
+				"amount": {
+					"type": "linear",
+					"base": 0.50,
+					"per_level_above_first": 0.25
+				}
+			},
+			{
+				"attribute": "minecraft:generic.jump_strength",
+				"id": "contrasting_curses:gravity_jump_strength",
+				"operation": "add_multiplied_base",
+				"amount": {
+					"type": "linear",
+					"base": 0.1,
+					"per_level_above_first": 0.05
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#minecraft:enchantable/mace",
+	"weight": 2
+}

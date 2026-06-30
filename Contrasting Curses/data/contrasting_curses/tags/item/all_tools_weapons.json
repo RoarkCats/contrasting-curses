@@ -1,0 +1,28 @@
+{
+    "values": [
+        "#minecraft:enchantable/mining",
+        "#minecraft:enchantable/weapon",
+        "#minecraft:enchantable/trident",
+        "#contrasting_curses:shoots_arrows",
+        {
+            "id": "#c:tools/mining_tool",
+            "required": false
+        },
+        {
+            "id": "#c:tools/shear",
+            "required": false
+        },
+        {
+            "id": "#c:tools/ranged_weapon",
+            "required": false
+        },
+        {
+            "id": "#c:tools/spear",
+            "required": false
+        },
+        {
+            "id": "#c:tools/melee_weapon",
+            "required": false
+        }
+    ]
+}

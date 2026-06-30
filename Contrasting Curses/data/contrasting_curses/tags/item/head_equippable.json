@@ -1,0 +1,11 @@
+{
+    "values": [
+        "#enchantable/head_armor",
+        "#minecraft:skulls",
+        "carved_pumpkin",
+        {
+            "id": "#c:pumpkins/carved",
+            "required": false
+        }
+    ]
+}

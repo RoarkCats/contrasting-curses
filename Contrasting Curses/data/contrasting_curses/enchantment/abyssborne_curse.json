@@ -1,0 +1,48 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.abyssborne_curse",
+		"fallback": "Curse of Abyssborne"
+	},
+	"effects": {
+		
+		"minecraft:damage_protection": [
+			{
+				"requirements": [
+					{"condition": "location_check", "predicate": {"position": {"y": {"max": 45}}}},
+					{"condition": "minecraft:damage_source_properties", "predicate": {"tags": [{"expected": false, "id": "minecraft:bypasses_invulnerability"}]}}
+				],
+				"effect": {"type": "add", "value": {"type": "linear","base": 0.5,"per_level_above_first": 0.25}}
+			},
+			{
+				"requirements": [
+					{"condition": "location_check", "predicate": {"position": {"y": {"min": 46, "max": 159}}}},
+					{"condition": "minecraft:damage_source_properties", "predicate": {"tags": [{"expected": false, "id": "minecraft:bypasses_invulnerability"}]}}
+				],
+				"effect": {"type": "add", "value": {"type": "linear","base": -0.5,"per_level_above_first": -0.25}}
+			},
+			{
+				"requirements": [
+					{"condition": "location_check", "predicate": {"position": {"y": {"min": 160}}}},
+					{"condition": "minecraft:damage_source_properties", "predicate": {"tags": [{"expected": false, "id": "minecraft:bypasses_invulnerability"}]}}
+				],
+				"effect": {"type": "add", "value": {"type": "linear","base": -1,"per_level_above_first": -0.5}}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"armor"
+	],
+	"supported_items": "#enchantable/armor",
+	"exclusive_set": "contrasting_curses:astralborne_curse",
+	"weight": 1
+}

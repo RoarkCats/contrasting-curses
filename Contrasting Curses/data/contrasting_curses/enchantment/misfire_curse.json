@@ -1,0 +1,42 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.misfire_curse",
+		"fallback": "Curse of Misfire"
+	},
+	"effects": {
+		"minecraft:projectile_spawned": [
+			{
+				"requirements": {
+					"condition": "minecraft:random_chance",
+					"chance": {
+						"type": "minecraft:enchantment_level",
+						"amount": {
+							"type": "linear",
+							"base": 0.2,
+							"per_level_above_first": 0.1
+						}
+					}
+				},
+				"effect": {
+					"type": "minecraft:run_function",
+					"function": "contrasting_curses:enchant/misfire"
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#contrasting_curses:shoots_arrows",
+	"weight": 1
+}

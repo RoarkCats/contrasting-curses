@@ -1,0 +1,69 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.elders_wrath_curse",
+		"fallback": "Curse of Elder's Wrath"
+	},
+	"effects": {
+		"minecraft:hit_block": [
+			{
+				"requirements": [
+					{
+						"condition": "minecraft:random_chance",
+						"chance": {
+							"type": "minecraft:enchantment_level",
+							"amount": {
+								"type": "minecraft:linear",
+								"base": 0.015,
+								"per_level_above_first": 0.01
+							}
+						}
+					},
+                    {
+                        "condition": "inverted",
+                        "term": {
+                            "condition": "entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                                "effects": {
+                                    "mining_fatigue": {}
+                                }
+                            }
+                        }
+                    }
+				],
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+                        {
+                            "type": "run_function",
+                            "function": "contrasting_curses:enchant/elders_wrath_fx"
+                        },
+						{
+							"type": "minecraft:apply_mob_effect",
+							"to_apply": "minecraft:mining_fatigue",
+							"min_duration": 10,
+							"max_duration": 30,
+							"min_amplifier": 0,
+							"max_amplifier": 1
+						}
+					]
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"mainhand"
+	],
+	"supported_items": "#minecraft:enchantable/mining",
+	"weight": 1
+}

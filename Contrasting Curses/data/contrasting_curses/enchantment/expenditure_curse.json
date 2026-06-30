@@ -1,0 +1,42 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.expenditure_curse",
+		"fallback": "Curse of Expenditure"
+	},
+	"effects": {
+		"minecraft:ammo_use": [
+			{
+				"requirements": {
+					"condition": "minecraft:random_chance",
+					"chance": {
+						"type": "minecraft:enchantment_level",
+						"amount": {
+							"type": "minecraft:lookup",
+							"values": [0.33,0.66,0.99],
+							"fallback": 1
+						}
+					}
+				},
+				"effect": {
+					"type": "minecraft:add",
+					"value": 1
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#contrasting_curses:shoots_arrows",
+	"weight": 1
+}

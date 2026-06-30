@@ -1,0 +1,17 @@
+{
+    "condition": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "slots": {
+            "armor.*": {
+                "predicates": {
+                    "enchantments": [
+                        {
+                            "enchantments": "contrasting_curses:burden_curse"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

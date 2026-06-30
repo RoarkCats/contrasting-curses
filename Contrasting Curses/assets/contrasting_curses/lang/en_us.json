@@ -1,0 +1,22 @@
+{
+    "enchantment.contrasting_curses.exclusivity_curse.desc": "Prevents the addition of any exclusive enchantments.",
+    "enchantment.contrasting_curses.expenditure_curse.desc": "Adds a 33%% chance to consume an additional arrow.",
+    "enchantment.contrasting_curses.misfire_curse.desc": "Arrows have a 20%% chance to misfire on the ground.",
+    "enchantment.contrasting_curses.gluttony_curse.desc": "Inflicts occasional hunger pangs.",
+    "enchantment.contrasting_curses.elders_wrath_curse.desc": "Inflicts occasional mining fatigue when mining.",
+    "enchantment.contrasting_curses.channeling_curse.desc": "Occasionally strikes the holder with lightning in rain.",
+    "enchantment.contrasting_curses.insomnia_curse.desc": "Nightmares have a chance to spawn when sleeping.",
+    "enchantment.contrasting_curses.snapping_curse.desc": "Fish have a 15%% chance to snap off the line.",
+    "enchantment.contrasting_curses.unluck_curse.desc": "Decreases fishing treasure chances.",
+    "enchantment.contrasting_curses.ignition_curse.desc": "Ignites block and mob item drops.",
+    "enchantment.contrasting_curses.gigantism_curse.desc": "Increases the size of the wearer.",
+    "enchantment.contrasting_curses.dwarfism_curse.desc": "Decreases the size and reach of the wearer.",
+    "enchantment.contrasting_curses.purity_curse.desc": "Prevents the addition of any other curses.",
+    "enchantment.contrasting_curses.gravity_curse.desc": "Increases the holder's gravity.",
+    "enchantment.contrasting_curses.abyssborne_curse.desc": "Buffs the wearer when underground, otherwise debuffs. Effects include protection, armor, damage, speed, haste.",
+    "enchantment.contrasting_curses.astralborne_curse.desc": "Buffs the wearer when near the clouds, otherwise debuffs. Effects include protection, armor, damage, speed, haste.",
+    "enchantment.contrasting_curses.trampling_curse.desc": "Tramples crops, plants, and suspicious blocks when worn.",
+    "enchantment.contrasting_curses.vulnerability_curse.desc": "Attacks received deal extra damage while using the item.",
+    "enchantment.contrasting_curses.headwind_curse.desc": "Headwinds have a chance to kill momentum while flying.",
+    "enchantment.contrasting_curses.burden_curse.desc": "Modifies the wearer's movement speed by inventory fill."
+}

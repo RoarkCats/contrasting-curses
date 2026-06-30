@@ -1,0 +1,179 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.channeling_curse",
+		"fallback": "Curse of Channeling"
+	},
+	"effects": {
+		"minecraft:tick": [
+			{
+				"requirements": [
+					{
+						"condition": "weather_check",
+						"raining": true
+					},
+					{
+						"condition": "minecraft:random_chance",
+						"chance": 0.2
+					},
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"location": {
+								"can_see_sky": true
+							},
+							"periodic_tick": 40
+						}
+					},
+					{
+						"condition": "inverted",
+						"term": {
+							"condition": "entity_properties",
+							"entity": "this",
+							"predicate": {
+								"type_specific": {
+									"type": "player",
+									"gamemode": ["spectator"]
+								}
+							}
+						}
+					}
+				],
+				"effect": {
+					"type": "run_function",
+					"function": "contrasting_curses:enchant/channeling_fx"
+				}
+			},
+			{
+				"requirements": [
+					{
+						"condition": "any_of",
+						"terms": [
+							{
+								"condition": "all_of",
+								"terms": [
+									{
+										"condition": "weather_check",
+										"raining": true,
+										"thundering": false
+									},
+									{
+										"condition": "minecraft:random_chance",
+										"chance": {
+											"type": "minecraft:enchantment_level",
+											"amount": {
+												"type": "minecraft:linear",
+												"base": 0.1,
+												"per_level_above_first": 0.1
+											}
+										}
+									},
+									{
+										"condition": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"location": {												
+												"can_see_sky": true
+											},
+											"periodic_tick": 100
+										}
+									},
+									{
+										"condition": "inverted",
+										"term": {
+											"condition": "entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "player",
+													"gamemode": ["spectator"]
+												}
+											}
+										}
+									}
+								]
+							},
+							{
+								"condition": "all_of",
+								"terms": [
+									{
+										"condition": "weather_check",
+										"thundering": true
+									},
+									{
+										"condition": "minecraft:random_chance",
+										"chance": {
+											"type": "minecraft:enchantment_level",
+											"amount": {
+												"type": "minecraft:linear",
+												"base": 0.2,
+												"per_level_above_first": 0.15
+											}
+										}
+									},
+									{
+										"condition": "minecraft:entity_properties",
+										"entity": "this",
+										"predicate": {
+											"location": {
+												"can_see_sky": true
+											},
+											"periodic_tick": 100
+										}
+									},
+									{
+										"condition": "inverted",
+										"term": {
+											"condition": "entity_properties",
+											"entity": "this",
+											"predicate": {
+												"type_specific": {
+													"type": "player",
+													"gamemode": ["spectator"]
+												}
+											}
+										}
+									}
+								]
+							}
+						]
+					}
+				],
+				"effect": {
+					"type": "minecraft:all_of",
+					"effects": [
+						{
+							"type": "minecraft:play_sound",
+							"sound": "item.trident.thunder",
+							"volume": 1,
+							"pitch": 1.3
+						},
+						{
+							"type": "summon_entity",
+							"entity": "lightning_bolt"
+						},
+						{
+							"type": "damage_item",
+							"amount": 1
+						}
+					]
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#minecraft:enchantable/trident",
+	"weight": 2
+}

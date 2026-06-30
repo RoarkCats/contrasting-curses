@@ -1,0 +1,12 @@
+{
+    "condition": "random_chance",
+    "chance": {
+        "type": "score",
+        "score": "contrasting_curses",
+        "target": {
+            "type": "fixed",
+            "name": "#snapping_level"
+        },
+        "scale": 0.15
+    }
+}

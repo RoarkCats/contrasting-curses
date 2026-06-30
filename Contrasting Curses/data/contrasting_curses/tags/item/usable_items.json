@@ -1,0 +1,12 @@
+{
+    "values": [
+        "#contrasting_curses:shoots_arrows",
+        "#minecraft:enchantable/trident",
+        "minecraft:shield",
+        "minecraft:spyglass",
+        {
+            "id": "#c:tools/shield",
+            "required": false
+        }
+    ]
+}
