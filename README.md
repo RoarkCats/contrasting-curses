@@ -31,8 +31,10 @@
 | Curse of Headwind | Elytra | Headwinds have a chance to kill momentum while flying |
 | Curse of Burden | Chest/Leg Armor | Modifies the wearer's movement speed by inventory fill <sup>13</sup> |
 
-<small>
-<h3>Additional Notes</h3><ol>
+
+<details>
+  <summary><b>Additional Notes</b></summary>
+<small><ol>
 <li>&nbsp;Ex: Cursed pickaxes can't get fortune/silk touch, cursed armor can't get any protection, etc.</li>
 <li>&nbsp;Modification to the Infinity enchantment done for expected compatibility</li>
 <li>&nbsp;Misfired arrows become client-desynced until they hit the ground, this is a Minecraft bug with updating projectile motion</li>
@@ -47,6 +49,7 @@
 <li>&nbsp;Shields still block damage, however, damage received before and immediately after shield activation is increased </li>
 <li>&nbsp;Movement speed modifier is calculated as follows: <code>(10 - slots) * 1/2 * (enchantment instances + total levels) %</code> </li>
 </ol></small>
+</details>
 
 ## Questions
 
