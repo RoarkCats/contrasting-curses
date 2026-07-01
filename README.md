@@ -86,6 +86,7 @@
 > - All enchantment description mods
 > - Wetland Whimsy (suspicious mud)
 > - Wan's Ancient Beasts (suspicious red sand & ice)
+> - Tide 2 (snapping curse)
 >
 > Let me know if there are any other mods you would like support for.
 

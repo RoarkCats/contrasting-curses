@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:fishing_bobber",
+        {
+            "id": "tide:fishing_bobber",
+            "required": false
+        }
+    ]
+}

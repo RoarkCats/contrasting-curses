@@ -10,7 +10,7 @@ execute unless predicate contrasting_curses:enchant/snapping run return 0
 
 # locate bobber
 tag @s add contrasting_curses.this
-execute as @e[type=fishing_bobber] at @s on origin if entity @s[tag=contrasting_curses.this] run summon marker ~ ~ ~ {Tags:["contrasting_curses.snapping"]}
+execute as @e[type=#contrasting_curses:fishing_bobber] at @s on origin if entity @s[tag=contrasting_curses.this] run summon marker ~ ~ ~ {Tags:["contrasting_curses.snapping"]}
 tag @s remove contrasting_curses.this
 
 # schedule effects (item doesn't yet exist)
