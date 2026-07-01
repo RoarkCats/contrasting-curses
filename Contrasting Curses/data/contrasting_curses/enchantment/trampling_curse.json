@@ -20,7 +20,10 @@
 
 
             {
-                "requirements": {"condition": "location_check", "offsetY": -1, "predicate": {"block": {"blocks": "#contrasting_curses:can_trample_sus"}}},
+                "requirements": {"condition": "any_of", "terms": [
+					{"condition": "location_check", "offsetY": 0, "predicate": {"block": {"blocks": "#contrasting_curses:can_trample_sus"}}},
+					{"condition": "location_check", "offsetY": -1, "predicate": {"block": {"blocks": "#contrasting_curses:can_trample_sus"}}}
+				]},
                 "effect": {"type": "run_function", "function": "contrasting_curses:enchant/trampling_sus"}
             },
 
