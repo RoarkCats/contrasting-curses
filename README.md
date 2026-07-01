@@ -55,7 +55,7 @@
 
 > **How do I install and use this datapack?**
 > 
-> Simply place the datapack zip file in the `datapacks` folder of your world and rejoin. Alternatively, you can use any global datapack loader mod!
+> Simply place the datapack zip file in the `datapacks` folder of your world and rejoin. You can also drag it into the datapacks screen during world creation, just make sure to enable it on the right side. Alternatively, you can use any global datapack loader mod or the mod packaged version!
 
 > **Does this support enchantment description mods?**
 > 
