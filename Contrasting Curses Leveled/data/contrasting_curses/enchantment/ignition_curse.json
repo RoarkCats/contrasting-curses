@@ -1,0 +1,71 @@
+{
+	"anvil_cost": 12,
+	"description": {
+		"translate": "enchantment.contrasting_curses.ignition_curse",
+		"fallback": "Curse of Ignition"
+	},
+	"effects": {
+		"minecraft:hit_block": [
+			{
+				"effect": {
+					"type": "run_function",
+					"function": "contrasting_curses:enchant/ignition_hit"
+				}
+			}
+		],
+		"minecraft:post_attack": [
+			{
+				"requirements": [
+					{
+						"condition": "entity_properties",
+						"entity": "this",
+						"predicate": {
+							"nbt": "{Health:0f}"
+						}
+					}
+				],
+				"affected": "victim",
+				"enchanted": "attacker",
+				"effect": {
+					"type": "all_of",
+					"effects": [
+						{
+							"type": "apply_mob_effect",
+							"to_apply": "luck",
+							"min_amplifier": 10,
+							"max_amplifier": 10,
+							"min_duration": {
+								"type": "linear",
+								"base": 0.05,
+								"per_level_above_first": 0.05
+							},
+							"max_duration": {
+								"type": "linear",
+								"base": 0.05,
+								"per_level_above_first": 0.05
+							}
+						},
+						{
+							"type": "run_function",
+							"function": "contrasting_curses:enchant/ignition_kill"
+						}
+					]
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 12
+	},
+	"max_level": 4,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 12
+	},
+	"slots": [
+		"mainhand"
+	],
+	"supported_items": "#contrasting_curses:all_tools_weapons",
+	"weight": 1
+}

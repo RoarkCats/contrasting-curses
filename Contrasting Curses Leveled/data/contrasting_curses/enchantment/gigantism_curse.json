@@ -1,0 +1,36 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.gigantism_curse",
+		"fallback": "Curse of Gigantism"
+	},
+	"effects": {
+		"minecraft:attributes": [
+			{
+				"attribute": "minecraft:generic.scale",
+				"id": "contrasting_curses:gigantism_scale",
+				"operation": "add_multiplied_base",
+				"amount": {
+					"type": "linear",
+					"base": 0.125,
+					"per_level_above_first": 0.0625
+				}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 13
+	},
+	"max_level": 3,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 13
+	},
+	"slots": [
+		"armor"
+	],
+	"supported_items": "#enchantable/equippable",
+	"exclusive_set": "contrasting_curses:dwarfism_curse",
+	"weight": 1
+}

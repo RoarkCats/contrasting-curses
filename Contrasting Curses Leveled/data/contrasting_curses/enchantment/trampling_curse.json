@@ -1,0 +1,109 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.trampling_curse",
+		"fallback": "Curse of Trampling"
+	},
+	"effects": {
+		"minecraft:location_changed": [
+            {
+                "requirements": [{"condition": "location_check", "offsetY": 1, "predicate": {"block": {"blocks": "#crops"}}}, {"condition": "random_chance", "chance": 0.4}],
+                "effect": {"type": "play_sound", "sound": "block.crop.break", "pitch": 1.2, "volume": 1}
+            },
+
+
+            {
+                "requirements": [{"condition": "location_check", "predicate": {"block": {"blocks": "#contrasting_curses:can_trample"}}},
+                {"condition": "inverted", "term": {"condition": "location_check", "predicate": {"block": {"blocks": "#contrasting_curses:cant_trample"}}}}],
+                "effect": {"type": "run_function", "function": "contrasting_curses:enchant/trampling"}
+            },
+
+
+            {
+                "requirements": {"condition": "any_of", "terms": [
+					{"condition": "location_check", "offsetY": 0, "predicate": {"block": {"blocks": "#contrasting_curses:can_trample_sus"}}},
+					{"condition": "location_check", "offsetY": -1, "predicate": {"block": {"blocks": "#contrasting_curses:can_trample_sus"}}}
+				]},
+                "effect": {"type": "run_function", "function": "contrasting_curses:enchant/trampling_sus"}
+            },
+
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "1"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "0"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "1"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "0"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "2"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "1"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "2"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "1"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "3"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "2"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "3"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "2"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "4"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "3"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "4"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "3"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "5"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "4"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "5"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "4"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "6"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "5"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "6"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "5"}}
+			},
+
+			{
+				"requirements": {"condition": "location_check", "offsetY": 0, "predicate": {"block": {"state": {"age": "7"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 0, 0], "properties": {"age": "6"}}
+			},
+			{
+				"requirements": {"condition": "location_check", "offsetY": 1, "predicate": {"block": {"state": {"age": "7"}}}},
+				"effect": {"type": "set_block_properties", "offset": [0, 1, 0], "properties": {"age": "6"}}
+			}
+		]
+	},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 0
+	},
+	"max_level": 1,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 0
+	},
+	"slots": [
+		"feet"
+	],
+	"supported_items": "#minecraft:enchantable/foot_armor",
+	"weight": 2
+}

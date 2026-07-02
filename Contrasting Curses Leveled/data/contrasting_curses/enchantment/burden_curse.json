@@ -1,0 +1,22 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.burden_curse",
+		"fallback": "Curse of Burden"
+	},
+	"effects": {},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 14
+	},
+	"max_level": 3,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 14
+	},
+	"slots": [
+		"armor"
+	],
+	"supported_items": "#contrasting_curses:chest_legs",
+	"weight": 1
+}

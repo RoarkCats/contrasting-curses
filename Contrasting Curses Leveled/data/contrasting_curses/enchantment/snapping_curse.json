@@ -1,0 +1,22 @@
+{
+	"anvil_cost": 8,
+	"description": {
+		"translate": "enchantment.contrasting_curses.snapping_curse",
+		"fallback": "Curse of Snapping"
+	},
+	"effects": {},
+	"max_cost": {
+		"base": 50,
+		"per_level_above_first": 5
+	},
+	"max_level": 3,
+	"min_cost": {
+		"base": 25,
+		"per_level_above_first": 5
+	},
+	"slots": [
+		"hand"
+	],
+	"supported_items": "#enchantable/fishing",
+	"weight": 1
+}
