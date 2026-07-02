@@ -14,26 +14,26 @@ Using this pack in any form on it's own will result in *very broken* curses and 
 
 | Enchantment | Lvl | Notes |
 |-------------|-------|--------------------------|
-| Curse of Exclusivity | 1 | Doesn't support levels. |
-| Curse of Expenditure | 3 | Adds a 33% chance per level to consume an additional arrow (max 99%) |
-| Curse of Misfire | 5 | Arrows have +10% chance per additional level to misfire (max 60%) |
-| Curse of Gluttony | 3 | Inflicts hunger pangs every 30s with a 10% chance per level per item <sup>1</sup> |
-| Curse of Elder's Wrath | 3 | Inflicts mining fatigue with a +1% chance on block hit per level (max 3.5%) |
-| Curse of Channeling | 3 | Strikes the holder every 5s with +10% in rain or +15% in thunder per level <sup>2</sup>  |
-| Curse of Insomnia | 4 | Nightmares have a +20% chance per level to spawn when sleeping (max 90%) |
-| Curse of Snapping | 3 | Fish have a 15% chance per level to snap off the line (max 45%) |
-| Curse of Unluck | 3 | Decreases fishing treasure luck by -1 per additional level (max -4 luck) |
-| Curse of Ignition | 4 | Ignites drops with a -1s item life time per level (min 0s - no drops) |
-| Curse of Gigantism | 3 | Increases size by +6% per additional level per item (max 25%) |
-| Curse of Dwarfism | 3 | Decreases size similarly and reach by -0.12 per additional level (max -0.5) |
-| Curse of Purity | 1 | Doesn't support levels. |
-| Curse of Gravity | 3 | Increases gravity by +25% per additional level (max +100%) <sup>3</sup> |
-| Curse of Abyssborne | 3 | Buffs & debuffs are increased by +50% per additional level (max 200%) |
-| Curse of Astralborne | 3 | Buffs & debuffs are increased by +50% per additional level (max 200%) |
-| Curse of Trampling | 1 | Doesn't support levels. |
-| Curse of Vulnerability | 3 | Attacks received while using deal +1 dmg per additional level (max +4 dmg) |
-| Curse of Headwind | 4 | Headwinds have a +0.1% per additional level to occur per block (max 0.5%) |
-| Curse of Burden | 3 | Buffs & debuffs are increased by +50% per additional level (max 200%) |
+| Curse of Exclusivity | I | Doesn't support levels. |
+| Curse of Expenditure | III | Adds a 33% chance per level to consume an additional arrow (max 99%) |
+| Curse of Misfire | V | Arrows have +10% chance per additional level to misfire (max 60%) |
+| Curse of Gluttony | III | Inflicts hunger pangs every 30s with a 10% chance per level per item <sup>1</sup> |
+| Curse of Elder's Wrath | III | Inflicts mining fatigue with a +1% chance on block hit per level (max 3.5%) |
+| Curse of Channeling | III | Strikes the holder every 5s with +10% in rain or +15% in thunder per level <sup>2</sup>  |
+| Curse of Insomnia | IV | Nightmares have a +20% chance per level to spawn when sleeping (max 90%) |
+| Curse of Snapping | III | Fish have a 15% chance per level to snap off the line (max 45%) |
+| Curse of Unluck | III | Decreases fishing treasure luck by -1 per additional level (max -4 luck) |
+| Curse of Ignition | IV | Ignites drops with a -1s item life time per level (min 0s - no drops) |
+| Curse of Gigantism | III | Increases size by +6% per additional level per item (max 25%) |
+| Curse of Dwarfism | III | Decreases size similarly and reach by -0.12 per additional level (max -0.5) |
+| Curse of Purity | I | Doesn't support levels. |
+| Curse of Gravity | III | Increases gravity by +25% per additional level (max +100%) <sup>3</sup> |
+| Curse of Abyssborne | III | Buffs & debuffs are increased by +50% per additional level (max 200%) |
+| Curse of Astralborne | III | Buffs & debuffs are increased by +50% per additional level (max 200%) |
+| Curse of Trampling | I | Doesn't support levels. |
+| Curse of Vulnerability | III | Attacks received while using deal +1 dmg per additional level (max +4 dmg) |
+| Curse of Headwind | IV | Headwinds have a +0.1% per additional level to occur per block (max 0.5%) |
+| Curse of Burden | III | Buffs & debuffs are increased by +50% per additional level (max 200%) |
 
 
 <details>
