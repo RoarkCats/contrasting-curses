@@ -1,7 +1,7 @@
 # run from main as/at all ignition tagged markers
 
 # sepuku if nobody nearby
-execute unless entity @a[distance=..10] run return run kill @s
+execute unless entity @a[distance=..16] run return run kill @s
 
 # ignite nearest item if mined
 execute unless block ~ ~ ~ #air run return 0
