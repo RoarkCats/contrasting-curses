@@ -4,7 +4,7 @@
 
 🪄 This datapack was made to support and balance out the enchantment systems in modpacks in an unobtrusive style. Contrasting Curses is best experienced alongside the [Sneaky Curses](https://modrinth.com/mod/sneaky-curses) mod and was made to support it and give cursed gear some love, *rather than constantly avoiding it in fear of Curse of Binding!*
 
-➕ All curses are limited to single levels by default, however, most curses stack and support multiple levels if given with commands or other mods! If you'd like to play with leveled curses, please install the addon Contrasting Curses: Leveled (WIP).
+➕ All curses are limited to single levels by default, however, most curses stack and support multiple levels if given with commands or other mods! If you'd like to play with leveled curses, please also install the addon [Contrasting Curses: Leveled](https://modrinth.com/datapack/contrasting-curses-leveled).
 
 ## Curses
 
