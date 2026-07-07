@@ -49,7 +49,7 @@ Using this pack in any form on it's own will result in *very broken* curses and 
 
 > **How do I install and use this datapack?**
 > 
-> Simply place the datapack zip file in the `datapacks` folder of your world alongside [Contrasting Curses](https://modrinth.com/datapack/contrasting-curses) and rejoin. You can also drag them into the datapacks screen during world creation, just make sure to enable them on the right side with Leveled on top. Alternatively, you can use any global datapack loader mod or the mod packaged version!
+> Simply place the datapack zip file in the `datapacks` folder of your world alongside [Contrasting Curses](https://modrinth.com/datapack/contrasting-curses) and rejoin. You can also drag them into the datapacks screen during world creation, just make sure to enable them on the right side with Leveled on top. Alternatively, you can use any global datapack loader mod!
 
 > **Help! My curses aren't leveled!**
 > 
