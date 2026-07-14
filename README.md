@@ -1,4 +1,4 @@
-# <img src="Contrasting Curses/pack.png" alt="drawing" width="24"/> Contrasting Curses
+# <img src="Contrasting Curses/pack.png" alt="drawing" width="24"/> Contrasting Curses [![Modrinth Project](https://img.shields.io/modrinth/dt/bTnSI5Mj?logo=modrinth&label=Modrinth&style=flat&labelColor=2D2D2D&color=555555)](https://modrinth.com/datapack/contrasting-curses)
 
 📕 Adds a collection of 20 unique curses spread across all types of equipment equally with interesting tradeoffs crafted in to encourage interaction with cursed gear. While all curses are generally negative, some may have useful niche applications or specific buffs when playing around them.
 
