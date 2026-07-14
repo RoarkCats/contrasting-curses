@@ -1,4 +1,4 @@
-# <img src="pack.png" alt="drawing" width="24"/> Contrasting Curses: Leveled
+# <img src="pack.png" alt="drawing" width="24"/> Contrasting Curses: Leveled [![Modrinth Project](https://img.shields.io/modrinth/dt/zYcllWCl?logo=modrinth&label=Modrinth&style=flat&labelColor=2D2D2D&color=555555)](https://modrinth.com/datapack/contrasting-curses-leveled)
 
 ### Addon Note:
 This pack is an **addon** for [Contrasting Curses](https://modrinth.com/datapack/contrasting-curses) that **enables leveled curses**!  
